@@ -6,22 +6,23 @@ import main.models.pojo.User;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by admin on 21.04.2017.
  */
-@Component
+@Service
 public class UserServiceImpl implements UserService {
 
     private static final Logger logger = Logger.getLogger(UserServiceImpl.class);
 
-    @Autowired
     private UserDao userDao;
 
     public UserDao getUserDao() {
         return userDao;
     }
 
+    @Autowired
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }

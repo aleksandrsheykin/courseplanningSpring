@@ -38,13 +38,24 @@
 
                 <form class="form" action="/planning/registration" method="post">
                     <h2 class="form-signin-heading">Registration</h2>
-
-                    <input type="text" class="form-control" placeholder="firstName" name="firstName" required autofocus>
-                    <input type="text" class="form-control" placeholder="lastName" name="lastName" required>
-                    <input type="number" class="form-control" placeholder="limit" name="limit" required>
-                    <input type="email" class="form-control" placeholder="Mail" name="mail" required>
-                    <input type="password" class="form-control" placeholder="Password" name="password" required>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="firstName" name="firstName" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="limit" name="limit" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Mail" name="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="form-group">
                     <button class="btn btn-lg btn-success btn-block" type="submit" name="registration">Registration</button>
+                    </div>
                 </form>
 
             </div>
